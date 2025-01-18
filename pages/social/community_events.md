@@ -41,7 +41,7 @@ permalink: meetings/
 {% endif %}
 ### Event: <a name="{{ i }}_item">{{ event.name }} </a>
 #### Group: [{{ event.group }}](/{{ event.repo }}/)
-#### Time: {{ event.time }} ({{ event.timezone }})
+#### Time: {{ event.time | date: "%I:%M %p" }} ({{ event.timezone }})
 #### Link: [{{ event.link }}]({{ event.link }})
 <div>
 <strong>Description</strong>: {{ event.description }}
